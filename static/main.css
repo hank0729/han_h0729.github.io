@@ -1,0 +1,33 @@
+body {
+    background: url('./static/error.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 1; 
+}
+#lyricsContainer h1 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: block;
+
+}
+#t1{
+    font-size: 45px;
+    position: absolute ;
+    left: 30%;
+    top: 50%;
+}
+#t2{
+    font-size: 40px;
+    position: absolute ;
+    left: 45%;
+    top: 60%;
+}
+

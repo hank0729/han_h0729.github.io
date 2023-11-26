@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Your Tears</title>
+    <link rel="stylesheet" href="../static/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body id="body">
+
+    <audio id="mp3" src="../static/mp.mp3"></audio>
+
+    <button id="playButton">播放</button>
+    <button id="restartButton">重新開始</button>
+
+    <video autoplay muted loop id="video">
+        <source src="../static/bg.mov" type="video/mp4">
+    </video>
+
+    <div id="lyricsContainer">
+        <h1 id="t1"></h1>
+        <h1 id="t2"></h1>
+    </div>
+
+    <div id="lyricsContainer2">
+    </div>
+
+    <script src="../static/index.js"></script>
+</body>
