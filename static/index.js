@@ -1,6 +1,9 @@
 var audio = document.getElementById("mp3");
 var playButton = document.getElementById("playButton");
 var restartButton = document.getElementById("restartButton");
+document.body.style.background =
+            'url("./static/4.png") no-repeat center center fixed';
+        document.body.style.backgroundSize = "cover";
 const lyric = [
     ["I saw you dancing in a crowded room", "我看見你在人群中跳舞"],
     ["You look so happy when I'm not with you", "我不在，你是多麽的自在"],
@@ -46,12 +49,14 @@ let currentContainerIndex = 0;
 
 playButton.addEventListener("click", function () {
     if (audio.paused) {
+        // 播放音樂時的處理
         audio.play();
         playButton.innerHTML = "暫停";
         document.getElementById("video").style.opacity = "0.5";
-        document.body.style.background = "white";
+        document.body.style.background = "white";  // 這一行將背景設置為白色
         fadeInNextLyric();
     } else {
+        // 暫停音樂時的處理
         audio.pause();
         playButton.innerHTML = "播放";
         document.getElementById("video").style.opacity = "0";
@@ -60,6 +65,7 @@ playButton.addEventListener("click", function () {
         document.body.style.backgroundSize = "cover";
         resetLyrics();
     }
+    
 });
 
 restartButton.addEventListener("click", function () {
